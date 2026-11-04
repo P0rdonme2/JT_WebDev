@@ -3,31 +3,59 @@
     <head>
         <title>HTML Advanced Noted</title>
         <meta charset-="UTF-8">
+        <style>
+            /* Cascading Style sheets
+            1. Selector=> says what to change 
+            2. Declaration
+                a. Property => What about the element to change
+                b. Value => How to change it
+            */
+           /*Html tag selector*/ body{
+              /*Declaration*/  color:rgb(6, 7, 3);
+                                background-color: rgb(238, 255, 0);
+                                border: inset 5px #0077ff;
+            }
+            h1{
+                text-align: center;
+            }
+            #even{
+                color:chocolate;
+                text-decoration: underline;
+            }
+            .lists{
+                width: 50%;
+                background-color:red;
+                border-radius: 5px;
+                font-size: 1.2rem;
+            }
+        </style>
     </head>
     <body>
         <h1>Html Advanced Notes</h1>
-        <h3> lists:</h3>
+        <div class="lists">
+        <h3> Lists:</h3>
         <ol type="I">
             <li>Alex</li>
-            <li>Katie</li>
+            <li id="even">Katie</li>
             <li>Andrew</li>
-            <li>Vienna</li>
+            <liid="even">Vienna</li>
         </ol>
         <ul>
             <li><a href="https://www.pickpik.com/orchard-apple-apples-fruit-green-nature-10657#google_vignette" target="_blank">Apple</a></li>
-            <li>Orange</li>
+            <li id="even">Orange</li>
             <li>Banana</li>
-            <li>Peach</li>
+            <li id="even">Peach</li>
         </ul>
         <dl>
             <dt>Fall</dt>
-            <dd>Halloween</dd>
+            <dd id="even">Halloween</dd>
             <dd>Thanksgiving</dd>
-            <dt>Winter</dt>
+            <dt id="even">Winter</dt>
             <dd>Christmas</dd>
-            <dd>Hanukkah</dd>
+            <dd id="even">Hanukkah</dd>
             <dd>New Years</dd>
         </dl>
+        </div>
         <h3>Attributes: </h3>
         <div>
         <a href="https://www.alltrails.com/trail/us/utah/mt-timpanogos-timpooneke-trail" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTySOuL9ArtR6x2RueECbB1BRrGNWyDNmpTQNWl4DskIA&s=10" alt="Mt Timp" width="250px"></a>

@@ -22,11 +22,14 @@
             padding:25px;
         }
         #flex-wrapper{
-            display:flex;
+            display: none;
             flex-direction: row;
             justify-content: flex-end;
             align-items:center;
             flex-wrap:wrap;
+        }
+        img{
+            width:200px;
         }
         </style>
 
@@ -34,9 +37,10 @@
     </head>
     <body>
         <h1>Alignment Notes</h1>
+        <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/silhouettes-of-hawaiian-palms-at-a-gorgeous-sunset-free-image.jpeg?h=800&quality=80" alt="Timp" image id="timp" onmouseout="rotation()">
         <div id="grid-wrapper">
-            <div id="box">
-                <p>Box 1</p>
+            <div id="box" onmouseover="showHide()">
+                <p id="text">Show More</p>
             </div>
              <div id="box">
                 <p>Box 2</p>
@@ -62,7 +66,36 @@
                 <p>Box 4</p>
             </div>
             </div>
-       <button>Click Me!</button>
+            <input type="color" id="newColor">
+            <br>
+       <button onclick="changeColor()">Click Me!</button>
+
+       <script>
+            let images =["https://i0.wp.com/picjumbo.com/wp-content/uploads/detailed-shot-of-ripples-at-sunset-free-image.jpeg?w=600&quality=80","https://cdn.pixabay.com/photo/2026/10/27/13/08/13-08-12-3_1280.jpg","https://i0.wp.com/picjumbo.com/wp-content/uploads/silhouettes-of-hawaiian-palms-at-a-gorgeous-sunset-free-image.jpeg?h=800&quality=80", "https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg"
+            ]
+            let currentImage=0
+            function rotation(){
+                currentImage +=1
+                if (currentImage>3)
+                    currentImage =0
+                document.getElementById("timp").scr = images[currentImage]
+                
+            }
+            function changeColor(){
+                let currentColor = document.getElementById ("newColor").value
+                document.getElementById("box").style.backgroundColor = currentColor
+            }
+            function showHide(){
+                let item = document.getElementById("flex-wrapper")
+                if(item.style.display=="flex"){
+                    item.style.display="none"
+                    document.getElementById("text").innerHTML = "Show More"
+                }else{
+                    item.style.display="flex"
+                     document.getElementById("text").innerHTML = "Show less"
+                }
+            }
+       </script>
     </body>
 
 

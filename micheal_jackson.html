@@ -45,8 +45,10 @@
                 
         } 
         </style>
+        
     </head>
     <body>
+
         <h1>Michael Jackson</h1>
         <div class="row">
          <div>
@@ -82,11 +84,42 @@
         <p>
         Around age 14, Michael's voice began to break and change. He consciously transitioned from his childhood soprano to a smooth, tender tenor capable of conveying deep, adult emotions. At just 14, he earned an Oscar nomination and his first solo Billboard No.1 hit with Ben, a hauntingly sweet ballad about a movie rat that highlighted his extraordinary vocal control and emotional depth. Even as a global teen star, Michael remained a disciplined student of performance, spending hours studing old Hollywood legends, tap routines, and the choreography of Fred Astaire and James Brown. At age 16, Michael performed the group's hit Dancing Machine on Soul Train. His sharply isolated, futuristic movement popularized the robot dance across the United States, cementing his reputation as an elite dancer.
         </p>
+        <h2>Ages 20-death</h2>
+        <div id="MP" onclick="showHide()">
+        <p>
+            Michael released his breakthrough solo album "Off the Wall" at age 20 produced by Quincy Jones, featuring hits like "Don't Stop 'Til You Get Enough" and "Rock with You". In 1982 Micheal releases Thriller, which is the best selling album of all time, sebuted the moonwalk at Motown 25, and suffered third degree burns from a pepsi comercial accident. Bad was realeased in 1987 also Michael went on a solo world tour. Mid to late 1980's Michael was diagnosed with vitiligo that causes your skin to change its color. Released Dangerous, which contains"Black or White," "Remember the Time", and addressed his changing appearance and skin condition in a landmark televised interview with Oprah Winfrey (1993). Michael married Lisa Marie Presley and later Debbie Rowe, with whom he had two children.  Underwent a high-profile child molestation trial in Santa Maria, California, resulting in an acquittal on all counts, after which he largely stepped away from public life and closed Neverland Ranch. Announced his ambitious comeback concert residency, This Is It, in London. He passed away on June 25, 2009, at age 50 due to acute propofol intoxication.
+        </p>
+        </div>
         
-        
-
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpk7yHgLSoxm1sPvHVxmInFRh25JaSQilIilRjpS8Jbw&s=10" alt="MJ" image id="MJ" onmouseout="rotation()">
 
         <a href="https://en.wikipedia.org/wiki/Michael_Jackson" target="_blank">Micheal Jackson</a>
+        <button onclick="changeParagraph()">Click Me!</button>
+        <script>
+            let images =["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpk7yHgLSoxm1sPvHVxmInFRh25JaSQilIilRjpS8Jbw&s=10", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjIoLroHjQd65XIOjLe67GrtPGkTHGlu1MV-NU9ACzXQ&s=10"
+            ]
+            let currentImage=0
+            function rotation(){
+                currentImage +=1
+                if (currentImage>3)
+                    currentImage =0
+                document.getElementById("MJ").src = images[currentImage]
+                
+            }
+            function changeParagraph(){
+                let currentParagraph = document.getElementById ("MP")
+            }
+            function showHide(){
+                let item = document.getElementById("flex-wrapper")
+                if(item.style.display=="flex"){
+                    item.style.display="none"
+                    document.getElementById("text").innerHTML = "Show More"
+                }else{
+                    item.style.display="flex"
+                     document.getElementById("text").innerHTML = "Show less"
+                }
+            }
+       </script>
     </body>
 
 </html>

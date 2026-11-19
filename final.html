@@ -9,24 +9,31 @@
             color:rgb(39, 114, 9);
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             border: inset 10px rgb(6, 6, 185) ;
+            height: 100%;
             
             padding:2.5%;
             margin:0 auto;
         }
-        
-        .body1{
-           
-            padding:5px
+        h1{
+            text-align: center;
         }
+        .body1{
+            border:inset 3px rgb(14, 83, 14);
+            padding:2.5%
+        }
+        
         .image1{
-            width:25%;
+            width:15%;
 
         }
         .image2{
-            width:25%;
+            width:15%;
         }
         .image3{
-            width:12%;
+            width:10%;
+        }
+        .image4{
+            width:9%
         }
         #grid-wrapper{
             display:grid;
@@ -36,21 +43,23 @@
         .row{
                 display:flex;
                 flex-direction:row;
-                justify-content:space-between;
+                justify-content:space-around;
                 align-items: center;
                 gap: 50px;
+                border:inset 5px rgb(2, 71, 71);
+                padding:2%;
         }
        </style>
         
     </head>
     <body>
-        <div class="body1"  >
+        <div class="body1">
         <h1>Salt Flats</h1>
         <p>
             The salt flats is a desert of white salt that spans 30-32,000 acres. Its located northwestern Utah west of the Great Salt Lake along Interstate 80. You should come to experience one of the most unique natural landscape.
         </p>
             
-            <div id="Salt" style="display:none">
+            <div class="row" id="Salt" style="display:none">
             <h3>Reasons</h3>
             <ol type="I">
             <li> The vast, blindingly white salt crust creates an alien-like expanse. During the winter or after a spring rain, a thin layer of water turns the flats into a giant natural mirror reflecting the sky and clouds.</li>
@@ -58,18 +67,20 @@
             <li> The flats are an international hub for motorsports and land-speed trials. You can visit the Bonneville International Speedway to watch high-speed events like Speed Week in August or see where historic land-speed records were set.</li>
             <li> Located right off Interstate 80, it is an easy day trip from Salt Lake City or a memorable stop on a broader Western road trip. During dry summer and fall conditions, you can drive directly onto the designated salt surface.</li>
             </ol>
-             <div id = "row">
+            
             <a href="https://www.utah.com/destinations/natural-areas/bonneville-salt-flats/" target="_blank"><img class="image2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzxUzA7y0KBKP_EZ3X17bQNuENrWc_8lS-jkgrLqlp8g&s=10" alt="Salta"image id="salta"></a>
             </div>
-            </div>
+           
             
            <a href="" target="_blank"><img class="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN71y0Cf6_Ot75Vt6B8TQBOpJfo54BCyORhJaSuiNvHw&s=10" alt="Salt"image id="salt" onmouseout="rotation()"></a>
             
            <a href="" target="_blank"><img class="image3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvua0w7ruxiW92b1gq3pv01WYseAUeW1VObmfZEMMDsQ&s=10" alt="Salta"image id="salta"></a>
+            <a href="" target="_blank"><img class="image4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3BVnFOtz_sM07MtDMePOrjjVjGFqXRAMCfOndVHXMg&s=10" alt="Salta"image id="salta"></a>
             </div>
            <div id="grid-wrapper">
             <button id="salty" onclick="showHide()">Show More</button>
             </div>
+                  
     </body>
     <script>
         let images =["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgQaqwOvs7gfR177ovRUbymWd7hiQxu8jakeSEPlEalA&s=10","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFY3AZ-G-6XEsgMIyLIzHMiT0fxQTopWs4_-GvLmgjBA&s=10","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzL0LslpBNW1R1hdDlqNjAkX9T75z9JjWBqqIPXRw2bA&s=10","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZWkJqg1wOyJXKIZs1HwOPdf7q-6YgcyHCuImkQNO2Gg&s", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN71y0Cf6_Ot75Vt6B8TQBOpJfo54BCyORhJaSuiNvHw&s=10"

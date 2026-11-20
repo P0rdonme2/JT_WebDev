@@ -5,35 +5,40 @@
         <meta charset= "UTF-8"> 
        <style>
         body{
-            background-color: aqua;
-            color:rgb(39, 114, 9);
+            background-color: rgb(213, 255, 255);
+            color:rgb(0, 0, 0);
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            border: inset 10px rgb(6, 6, 185) ;
+            border: solid 20px rgb(93, 93, 155) ;
             height: 100%;
             
             padding:2.5%;
             margin:0 auto;
         }
         h1{
+            color:azure;
             text-align: center;
+            background-color: rgba(8, 163, 112, 0.466);
+            padding:2%;
+            border-radius: 10px;
+            border:solid 10px rgb(59, 230, 187);
         }
         .body1{
-            border:inset 3px rgb(14, 83, 14);
+            border:inset 6px rgb(40, 255, 244);
             padding:2.5%
         }
         
         .image1{
-            width:15%;
+            width:100%;
 
         }
         .image2{
-            width:15%;
+            width:30%;
         }
         .image3{
-            width:10%;
+            width:70%;
         }
         .image4{
-            width:9%
+            width:90%
         }
         #grid-wrapper{
             display:grid;
@@ -47,6 +52,14 @@
                 align-items: center;
                 gap: 50px;
                 border:inset 5px rgb(2, 71, 71);
+                padding:2%;
+        }
+        .bro{
+            display:flex;
+                flex-direction:row;
+                justify-content:space-around;
+                align-items: center;
+                gap: 50px ;
                 padding:2%;
         }
        </style>
@@ -71,11 +84,11 @@
             <a href="https://www.utah.com/destinations/natural-areas/bonneville-salt-flats/" target="_blank"><img class="image2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzxUzA7y0KBKP_EZ3X17bQNuENrWc_8lS-jkgrLqlp8g&s=10" alt="Salta"image id="salta"></a>
             </div>
            
+            <div class="bro">
+           <a  target="_blank"><img class="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN71y0Cf6_Ot75Vt6B8TQBOpJfo54BCyORhJaSuiNvHw&s=10" alt="Salt"image id="salt" onmouseout="rotation()"></a>
             
-           <a href="" target="_blank"><img class="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN71y0Cf6_Ot75Vt6B8TQBOpJfo54BCyORhJaSuiNvHw&s=10" alt="Salt"image id="salt" onmouseout="rotation()"></a>
-            
-           <a href="" target="_blank"><img class="image3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvua0w7ruxiW92b1gq3pv01WYseAUeW1VObmfZEMMDsQ&s=10" alt="Salta"image id="salta"></a>
-            <a href="" target="_blank"><img class="image4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3BVnFOtz_sM07MtDMePOrjjVjGFqXRAMCfOndVHXMg&s=10" alt="Salta"image id="salta"></a>
+           <a  target="_blank"><img class="image3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvua0w7ruxiW92b1gq3pv01WYseAUeW1VObmfZEMMDsQ&s=10" alt="Salta"image id="salta"></a>
+            <a  target="_blank"><img class="image4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3BVnFOtz_sM07MtDMePOrjjVjGFqXRAMCfOndVHXMg&s=10" alt="Salta"image id="salta"></a>
             </div>
            <div id="grid-wrapper">
             <button id="salty" onclick="showHide()">Show More</button>
